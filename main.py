@@ -21,6 +21,6 @@ async def on_message(msg):
 
 try:
   keep_alive()
-  client.run(os.environ['TOKEN'])
+  client.run(os.environ.get('TOKEN'))
 except Exception as err:
   raise err
